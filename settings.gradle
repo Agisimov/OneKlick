@@ -1,0 +1,16 @@
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        jcenter() // Warning: this repository is going to shut down soon
+    }
+}
+rootProject.name = "163"
+include ':app'
+include ':p0041basicviews'
+include ':p0051layoutfiles'
+include ':laba4'
+include ':P0072_LayoutProp'
+include ':p005_viewbyid'
+include ':P0091_OnClickButtons'

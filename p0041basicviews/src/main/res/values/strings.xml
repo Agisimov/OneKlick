@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">BasicViews</string>
+    <string name="btn1">MY BUTTON</string>
+    <string name="btn2">MY CHECK</string>
+</resources>

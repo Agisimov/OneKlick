@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">P0091_OnClickButtons</string>
+    <string name="tvOut">Авторизация</string>
+    <string name="us1">UserName</string>
+    <string name="login">Логин</string>
+    <string name="Password">Пароль</string>
+    <string name="vhod">Войти</string>
+    <string name="zabil">Забыли пароль?</string>
+    <string name="account">Еще нет аккаунта?</string>
+    <string name="vhod2">Регистрация</string>
+</resources>
