@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">My Application</string>
+    <string name="btn1">Кнокпа одын</string>
+    <string name="btn2">Кнокпа Дава</string>
 </resources>
