@@ -4,72 +4,170 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#404445"
+
     tools:context=".MainActivity">
 
-    <EditText
-        android:id="@+id/editTextTextPersonName"
-        android:layout_width="350dp"
-        android:layout_height="42dp"
-        android:layout_marginTop="228dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="FullName"
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="404dp"
+        android:layout_height="102dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="308dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.214"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button1"
+            android:layout_width="20dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+
+            android:onClick = "onCLick"
+            android:layout_margin="5dp"
+            android:text=""
+
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button2"
+            android:layout_width="20dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+
+            android:onClick = "onCLick"
+            android:layout_margin="5dp"
+            android:text="" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button3"
+            android:layout_width="20dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+
+            android:onClick = "onCLick"
+            android:layout_margin="5dp"
+            android:text="" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="404dp"
+        android:layout_height="102dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="328dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button4"
+            android:layout_width="20dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+
+            android:onClick = "onCLick"
+            android:layout_margin="5dp"
+            android:text="" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button5"
+            android:layout_width="20dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+
+            android:layout_margin="5dp"
+            android:onClick = "onCLick"
+            android:text="" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button6"
+            android:layout_width="20dp"
+            android:layout_height="100dp"
+
+            android:layout_margin="5dp"
+            android:onClick = "onCLick"
+            android:layout_weight="1"
+            android:text="" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="404dp"
+        android:layout_height="102dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="250dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button7"
+            android:layout_width="20dp"
+            android:layout_height="100dp"
+
+            android:layout_margin="5dp"
+            android:onClick = "onCLick"
+            android:layout_weight="1"
+            android:text="" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button8"
+            android:layout_width="20dp"
+            android:layout_height="100dp"
+
+            android:layout_margin="5dp"
+            android:onClick = "onCLick"
+            android:layout_weight="1"
+            android:text="" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button9"
+            android:layout_width="20dp"
+            android:layout_height="100dp"
+
+            android:layout_margin="5dp"
+            android:onClick = "onCLick"
+            android:layout_weight="1"
+            android:text="" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonStart"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="548dp"
+        android:text="Заново"
+        android:onClick = "onClickStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
-        android:id="@+id/editTextTextEmailAddress"
-        android:layout_width="350dp"
-        android:layout_height="46dp"
-        android:layout_marginStart="61dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="90dp"
-        android:ems="10"
-        android:inputType="textEmailAddress"
-        android:text="Email"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
-
-    <EditText
-        android:id="@+id/editTextTextPassword"
-        android:layout_width="350dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:ems="10"
-        android:inputType="textPassword"
-        android:text="Password"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.226"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress" />
-
     <Button
-        android:id="@+id/button"
-        android:layout_width="350dp"
-        android:layout_height="55dp"
-        android:layout_marginTop="56dp"
-        android:backgroundTint="#C55757"
-        android:text="Registr"
+        android:id="@+id/button15"
+        android:layout_width="252dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="60dp"
+        android:text="ходит Х"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.297"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="116dp"
-        android:background="#515657"
-        android:text="Alredy registred! Login Me"
-        android:textColor="#FFFFFF"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
