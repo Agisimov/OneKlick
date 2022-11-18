@@ -1,4 +1,4 @@
-package ru.startandroid.develop.laba4;
+package ru.startandroid.develop.save;
 
 import android.app.Activity;
 import android.content.SharedPreferences;
@@ -60,7 +60,7 @@ public class MainActivity extends Activity implements OnClickListener {
         Editor P = Pas.edit();
         P.putString(SAVED_PAS, etPassword.getText().toString());
         P.commit();
-        Toast.makeText(this, " Gj", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, " Пользователь сохранен", Toast.LENGTH_SHORT).show();
     }
 
     void checkText() {
